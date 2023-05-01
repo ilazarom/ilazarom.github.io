@@ -1,0 +1,243 @@
+
+        body {
+            width: 960px;
+            margin: auto;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            padding: 10px;
+            border: 3px solid rgb(161, 161, 172);
+        }
+
+        body header {
+            width: 100%;
+            height: 140px;
+            background-color: #c2823a;
+            margin-bottom: 10px;
+        }
+
+        nav {            
+            width: 100%;
+            height: 100px;
+            background-color: #c2823a;
+            margin-bottom: 10px;
+           
+        }
+
+        section {
+            width: 100%;
+            height: 680px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            background-color: #c2823a;
+            float: left;
+        }
+
+        section header {
+            width: 98%;
+            height: 80px;
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            background-color: #ebe39b;
+
+        }
+
+        article {
+            width: 98%;
+            height: 200px;
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            background-color: #ebe39b;
+    
+        }
+
+        /* Selector para la etiqueta 'footer' que sea hijo de la etiqueta 'section' */
+        section footer {
+            width: 98%;
+            height: 100px;
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            background-color: #ebe39b;
+            
+        }
+
+        aside {
+            position: fixed;
+            float: right;
+        }
+
+        footer {
+            width: 100%;
+            height: 60px;
+            background-color: #c2823a;
+            clear: both;
+        }
+
+        .div_inline_block{
+            display: inline-block;
+	        background-color: rgb(247, 154, 96);
+        	margin: 20px;
+            width: 197px;
+	        height: 50px;
+        }
+        .publicidad{
+            position: absolute;
+            width: 100px;
+            height: 300px;
+            top: 100px;
+            left: 1000px;
+            float: right;
+        }
+
+        .nosotros{
+            position: relative;  
+            width: 98%;
+            height: 310px;
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        
+        #logo{
+            position: relative;
+            display: inline;
+            width: 25px;
+        	height: 25px;
+            left: 760px;
+        }
+
+        #icono{
+            width: 100px;
+        	height: 100px;      
+            left: 60px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-family: 'Brush Script MT';
+            font-size: 50px;
+            color: #010101;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        h2 {
+            font-family: 'Ginebra';
+            font-size: 20px;
+            color: #413014;
+            text-align: center;
+            text-transform:capitalize;
+        }
+
+        h3 {
+            font-family: 'Verdana';
+            font-size: 40px;
+            color: #413014;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        p {
+            letter-spacing: 3px;
+            word-spacing: 5px;
+            line-height: 1em;
+            color: #413014;
+            font: 1em Verdana;
+            text-indent: 20px;
+            text-align: justify;
+        }
+
+        h4 {
+            font-family: 'Times New Roman';
+            font-size: 20px;
+            color: #000000;
+            text-align: right;
+        }
+
+        /*MENU DESPLEGABLE*/
+        
+        .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            width: 100%;
+            overflow: auto;
+            box-shadow: 0px 8px 16px 0px rgba(255, 0, 8, 0.2);
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .dropdown-content a {
+            display: block;
+            color:rgb(170, 112, 14);
+            padding: 5px;
+            text-decoration: none;
+        }
+        
+        .dropdown-content a:hover {
+            color:rgb(162, 0, 0);
+            background-color:rgb(66, 66, 242);
+        }
+
+        /* MEDIAS QUERYS para el tamaño de pantalla*/
+
+        @media screen and (min-width: 1300px){
+            section{
+                width:100%;
+            }
+
+            body{
+                background-color: #4a529e;
+            }
+        }
+
+        @media screen and (max-width: 700px) and (orientation: portrait) {
+            body{
+                font-size: auto;
+                padding: 50px;
+                border: 8px solid black;
+                background-color: #70f4eb;
+            }
+        }
+        /*Para tablets, primero vertical y despues en horizontal*/
+
+        @media screen and (max-width: 1000px) and (orientation: landscape){
+
+            body{
+                font-size: auto;
+                padding: 50px;
+                border: 8px solid black;
+                background-color: #70f167;
+            }
+        }
+
+        @media screen and (max-width: 480px) and (orientation: portrait) {
+            body{
+                font-size: auto;
+                padding: 50px;
+                border: 8px solid black;
+                background-color: #e3f964;
+            }
+        }
+
+        @media screen and (max-width: 320px) and (orientation: landscape){
+
+            body{
+                font-size: auto;
+                padding: 50px;
+                border: 8px solid black;
+                background-color: #e12a24;
+            }
+        }
+

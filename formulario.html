@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario de contacto</title>
+    
+</head>
+<body>
+	<h1>Contacto</h1>
+	<form style="margin-right: 60%; background-color: #b1ada4;;">
+		<fieldset>
+			<legend>Información personal</legend>
+			<label for="nombre">Nombre:</label>
+			<input type="text" id="nombre" name="nombre" required autofocus placeholder="Escriba su nombre">
+			<br>
+			<label for="apellidos">Apellidos:</label>
+			<input type="text" id="apellidos" name="apellidos" placeholder="Escriba sus apellidos">
+			<br>
+			<label for="correo">Correo electrónico:</label>
+			<input type="email" id="correo" name="correo" required placeholder="Escriba su correo electrónico">
+			<br>
+			<label for="telefono">Teléfono:</label>
+			<input type="tel" id="telefono" name="telefono" placeholder="Escriba su número de teléfono">
+			<br>
+			<label for="fecha_nacimiento">Fecha de nacimiento:</label>
+			<input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+			<br>
+			<label for="genero">Género:</label>
+			<input type="radio" id="hombre" name="genero" value="hombre">
+			<label for="hombre">Hombre</label>
+			<input type="radio" id="mujer" name="genero" value="mujer">
+			<label for="mujer">Mujer</label>
+			
+		</fieldset>
+		<fieldset>
+			<legend>Información de contacto</legend>
+			<label for="direccion">Dirección:</label>
+			<textarea id="direccion" name="direccion" rows="4" cols="50"></textarea>
+			<br>
+			<label for="ciudad">Ciudad:</label>
+			<input type="text" id="ciudad" name="ciudad">
+			<br>
+			<label for="pais">País:</label>
+			<input type="text" id="pais" name="pais">
+			<br>
+			<label for="codigo_postal">Código postal:</label>
+			<input type="text" id="codigo_postal" name="codigo_postal">
+		</fieldset>
+		<fieldset>
+			<legend>Mensaje</legend>
+			<label for="asunto">Asunto:</label>
+			<input type="text" id="asunto" name="asunto">
+			<br>
+			<label for="mensaje">Mensaje:</label>
+			<textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea>
+		</fieldset>
+		<input type="submit" value="Enviar">
+	</form>
+</body>
+</html>
